@@ -5,8 +5,48 @@
     box-sizing: border-box;
 }
 
+:root{
+    --clr-red: hsl(0, 100%, 74%) ;
+    --clr-green: hsl(154, 59%, 51%);
+    --clr-blue: hsl(248, 32%, 49%);
+    --clr-dark-blue: hsl(249, 10%, 26%) ;
+    --clr-gray-blue:hsl(246, 25%, 77%);
+
+    --fs-default: 16px;
+    --fs-medium: 28px;
+    --fs-large: 32px;
+    --fs-xlarge: 48px;
+
+    @media screen and (min-width: 1024px) {
+    
+        --fs-medium: 28px;
+        --fs-large: 32px;
+        --fs-xlarge: 64px;
+    }
+
+}
+
 body {
+    font-size: var(--fs-default);
     font-family: 'Poppins', sans-serif;
+    padding-top: 3rem; /* 1rem= 16px */
+    padding-bottom: 3rem;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 1400px;
+    background-color: var(--clr-red);
+    height: 800px;
+    padding: 4rem;
+    justify-content: space-around;
+    display: flex; /* section right, and section left would be the two items here */
+    gap: 1.5rem;
+    align-items: center;
+    background-image: url("../images/bg-intro-desktop.png");
+    
 }
 
 
