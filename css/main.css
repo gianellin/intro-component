@@ -74,6 +74,11 @@ body {
 .right {
     flex: 0 0 40%;
     height: 600px;
+
+    @media screen and (max-width 1023px) {
+        flex: none
+    }
+
 }
 .heading {
     max-width: 100%;
@@ -116,6 +121,73 @@ body {
     padding: 0.6rem 1rem;
     position: relative;
 }
+
+#in1 {
+    margin-top: 20px;
+}
+
+#in4 {
+    margin-bottom: 20px;
+}
+
+.error-icon {
+    position: absolute;
+    right: 8%;
+    top: 28%;
+}
+input {
+    display: block;
+    width: 100%;
+    padding: 1.2rem 1.8rem;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: rgb(194, 191, 191);
+    font-weight: bolder;
+    color: --var(--clr-dark-blue);
+
+}
+input:focus {
+    border: 1px solid var(--clr-dark-blue);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    outline-offset: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-green {
+    background-color: var(--clr-green);
+    color: white;
+    font-size: var(--fs-default);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: 5px;
+    border-bottom:  3px outset var(--clr-green);
+    border-right: 1px solid var(--clr-green);
+    border-left: 1px solid var(--clr-green);
+    border-top: 1px solid var(--clr-green);
+
+}
+
+.message {
+    font-size: 12px;
+    color: var(--clr-gray-blue);
+    padding-bottom: 2.5rem;
+
+}
+
+#terms{
+    color: var(--clr-red);
+    
+}
+
 
 
 .attribution { font-size: 11px; text-align: center; }

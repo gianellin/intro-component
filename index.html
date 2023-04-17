@@ -28,32 +28,32 @@
     </h2>
     <div class="form-group">
         <form id="form">
-            <div class="input">
+            <div class="input" id="in1">
                 <input type="text" class="f_Name" placeholder="First Name" id="fname">
-                <span><img src="images/icon-error.svg" alt="error"></span>
+                <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
                 <span class="fname_error">First name cannot be empty</span>
             </div>
             <div class="input">
                 <input type="text" class="l_Name" placeholder="Last Name" id="lname">
-                <span><img src="images/icon-error.svg" alt="error"></span>
+                <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
                 <span class="lname_error">Last name name cannot be empty</spa> 
             </div>
             <div class="input">
                 <input type="text" class="email" placeholder ="Email Address" id="em">
-                <span><img src="images/icon-error.svg" alt="error"></span>
+                <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
                 <span class="email_error">Email cannot be empty</span> 
             </div>
-            <div class="input">
+            <div class="input" id="in4">
                 <input type="text" class="password" placeholder="Password" id="pass">
-                <span><img src="images/icon-error.svg" alt="error"></span>
+                <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
                 <span class="pass_error">Password cannot be empty</spa>
 
             </div>
             
             <button class="btn btn-green" type="submit">Claim your free trial</button>
             
-            <p>
-                By clicking the button, you are agreeing to our <span>Terms and Services</span>
+            <p class="message">
+                By clicking the button, you are agreeing to our <span id="terms">Terms and Services</span>
             </p>
         </form>
     </div>
