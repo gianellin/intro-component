@@ -46,7 +46,75 @@ body {
     gap: 1.5rem;
     align-items: center;
     background-image: url("../images/bg-intro-desktop.png");
+    box-shadow: 0 5px 50px grey;
     
+}
+
+/* LEFT SIDE */
+.left {
+    color: white;
+    padding-left: 8.5rem;
+    flex: 0 0 45%;
+}
+
+
+.title1{
+    font-size: var(--fs-large);
+    margin-bottom: 20px;
+}
+
+.desc1{
+    font-size: 14px;  
+    line-height:1.8;
+ }
+
+
+
+ /* RIGHT SIDE */
+.right {
+    flex: 0 0 40%;
+    height: 600px;
+}
+.heading {
+    max-width: 100%;
+    background-color: var(--clr-blue);
+    border-radius: 8px;
+    padding: 1rem;
+    color: white;
+    font-size: var(--fs-default);
+    font-weight: 400;
+    text-align: center;
+    box-shadow: 5px 2px 17px rgb(79, 76, 76);
+    margin-bottom: 25px;
+    display: block;
+}
+
+.hook {
+    font-weight: 700;
+    flex-direction: inline-block;
+}
+
+.form-group {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 5px 2px 17px rgb(79, 76, 76); ;
+
+}
+
+.input {
+    flex: 1;
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    position: relative;
 }
 
 
