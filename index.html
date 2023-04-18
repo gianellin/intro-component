@@ -14,58 +14,64 @@
 </head>
 <body>
 
-<div class="wrapper">
-  <section class="left">
-    <h1 class="title1">Learn to code by watching others</h1>
-
-    <p class="desc1"> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-        but understanding how developers think is invaluable. </p>
-  </section>
-
-  <section class="right">
-    <h2 class="heading">
-        <span class="hook">Try it free 7 days</span> then $20/mo. thereafter
-    </h2>
-    <div class="form-group">
-        <form id="form">
-            <div class="input" id="in1">
-                <input type="text" class="f_Name" placeholder="First Name" id="fname">
-                <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
-                <span class="fname_error">First name cannot be empty</span>
-            </div>
-            <div class="input">
-                <input type="text" class="l_Name" placeholder="Last Name" id="lname">
-                <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
-                <span class="lname_error">Last name name cannot be empty</spa> 
-            </div>
-            <div class="input">
-                <input type="text" class="email" placeholder ="Email Address" id="em">
-                <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
-                <span class="email_error">Email cannot be empty</span> 
-            </div>
-            <div class="input" id="in4">
-                <input type="text" class="password" placeholder="Password" id="pass">
-                <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
-                <span class="pass_error">Password cannot be empty</spa>
-
-            </div>
-            
-            <button class="btn btn-green" type="submit">Claim your free trial</button>
-            
-            <p class="message">
-                By clicking the button, you are agreeing to our <span id="terms">Terms and Services</span>
-            </p>
-        </form>
-    </div>
-</section>
-
-</div>
+<main class="container">
+  <div class="wrapper">
+    <!-- left side -->
+    <section class="left">
+      <h1 class="title1">Learn to code by watching others</h1>
   
-  <footer>
-    <p class="attribution">
-      Challenge by Frontend Mentor 
-      Coded by <a href="#">Gianella Cevallos</a>.
-    </p>
-  </footer>
+      <p class="desc1"> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p>
+    </section>
+  
+    <!-- right side -->
+    <section class="right">
+      <div class="card">
+          <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
+      </div>
+      <div class="form-container">
+          <form id="form">
+              <div class="field" id="in1">
+                  <input type="text" class="f_Name" placeholder="First Name" id="fname">
+                  <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
+                  <span class="error">First name cannot be empty</span>
+              </div>
+              <div class="field">
+                  <input type="text" class="l_Name" placeholder="Last Name" id="lname">
+                  <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
+                  <span class="error">Last name name cannot be empty</spa> 
+              </div>
+              <div class="field">
+                  <input type="text" class="email" placeholder ="Email Address" id="em">
+                  <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
+                  <span class="error">Email cannot be empty</span> 
+              </div>
+              <div class="field" id="in4">
+                  <input type="text" class="password" placeholder="Password" id="pass">
+                  <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
+                  <span class="error">Password cannot be empty</spa>
+  
+              </div>
+              
+              <button class="btn btn-green" type="submit">Claim your free trial</button>
+              
+              <p class="message">
+                  By clicking the button, you are agreeing to our <span>Terms and Services</span>
+              </p>
+          </form>
+      </div>
+    </section>
+
+    <footer>
+      <p class="attribution">
+        Challenge by Frontend Mentor 
+        Coded by <a href="#">Gianella Cevallos</a>.
+      </p>
+    </footer>
+  
+  </div>
+    
+   
+</main>
 </body>
 </html>
