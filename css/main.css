@@ -17,16 +17,9 @@
     --fs-large: 32px;
     --fs-xlarge: 48px;
 
-    @media screen and (min-width: 1024px) {
-    
-        --fs-medium: 28px;
-        --fs-large: 32px;
-        --fs-xlarge: 64px;
-    }
-
 }
 
-body {
+html {
     font-size: var(--fs-default);
     font-family: 'Poppins', sans-serif;
 }
@@ -122,10 +115,10 @@ body {
     margin-bottom: 20px;
 }
 
-/* .error-icon,
-.error {
+.error-icon,
+.error-text {
     display: none;
-} */
+}
 
 .right input, .btn {
     width: 100%;
@@ -150,9 +143,10 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.1rem;
 	font-weight: 600;
+   
 }
 
-.right .btn {
+.right .btn[type = submit] {
     cursor: pointer;
 	background-color: hsl(154, 59%, 51%);
 	box-shadow: 0px 4px hsl(154, 56%, 44%);
@@ -165,7 +159,7 @@ body {
 	border: none;
 }
 
- .right .btn:hover {
+ .right .btn[type = submit]:hover {
     background-color: hsl(154, 73%, 65%);
 }
 
@@ -179,28 +173,32 @@ body {
 }
 .right .message span {
     color: var(--clr-red);
+    font-weight: 700;
     
 }
 
-.error {
+.error-text {
+
     text-align: right;
+    align-items: right;
     bottom: 0;
     right: 0;
 	font-size: .8rem;
 	font-style: italic;
-	color: hsl(0, 100%, 74%);
+	color: var(--clr-red);
 	font-weight: 500;
 
 }
 
 .error-icon {
+
 	position: absolute;
-	top: 0;
-	right: 20px;
 	top: 28%;
+	right: 20px;
+	
 }
 
-.error .error-icon {
+.error-text .error-icon {
     display: block;
 }
 
@@ -210,6 +208,61 @@ body {
     text-align: center; 
 }
 .attribution a { 
-    color: hsl(0, 0%, 100%); 
+    color: white; 
 }
 
+.field.error input {
+    border: 2px solid (var(--clr-red));
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        background-image: url(/images/bg-intro-desktop.png);
+    }
+    .wrapper {
+        flex-direction: row;
+    }
+    .left {
+        text-align: left;
+        padding-right: 50px;
+    }
+
+    .left h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .left p {
+        font-size: 1.1rem; 
+    }
+
+    .right {
+        max-width: 500px;
+
+    }
+    .right .card p {
+        font-size: 1.1rem;
+
+    }
+    .right .card {
+        padding: 20px;
+
+    }
+
+    .right .form-container {
+        padding: 40px;
+
+    }
+
+    .right input::placeholder,
+    .right input {
+        font-size: 1.05rem;
+        height: 60px;
+
+    }
+
+    .right .message {
+        margin-top: 20px;
+        font-size: .7rem;
+    }
+}
