@@ -57,7 +57,7 @@ This project let me review many CSS properties that I was not aware of, and also
 
 ### Continued development
 
-It needs to have a function added to the email error. This function will limit the type of input for the email field (check regex).
+It needs to have a function added to the email error. This function will limit the type of input for the email field/ Email validation (check regex).
 
 <br>
 
@@ -65,6 +65,7 @@ It needs to have a function added to the email error. This function will limit t
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) - Check the mozilla CSS guide.
 - [How to Fix the “Cannot read property ‘addEventListener’ of null” Error in JavaScript](https://codingbeautydev.com/blog/javascript-cannot-read-property-addeventlistener-of-null/) - This is an amazing article which helped me finally understand why I was getting this error, and find the proper solution. I'd recommend it to anyone still learning this concept.
+- [Email validation with regex](https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript?page=2&tab=scoredesc#tab-top) - This is where I took the solution for the email validation. 
 
 ## Author
 
