@@ -9,12 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <script src="js/main.js"></script>
+  
   <title>Intro component</title>
 </head>
-<body>
 
-<main class="container">
+<body>
+<section class="container">
   <div class="wrapper">
     <!-- left side -->
     <section class="left">
@@ -27,53 +27,48 @@
     <!-- right side -->
     <section class="right">
       <div class="card">
-          <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
+          <p>Try it free 7 days then <span>$20/mo. thereafter</span></p>
       </div>
       <div class="form-container">
-          <form id="form">
+          <form action="#">
               <div class="field" id="in1">
-                  <input type="text" class="f_Name" placeholder="First Name" id="fname">
-                  <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
+                  <input name="f_Name" id="f_Name" value="" type="text" placeholder="First Name" >
+                  <span><img src="images/icon-error.svg" alt="" class="error-icon"></span>
                   <span class="error-text">First name cannot be empty</span>
               </div>
-              <div class="field">
-                  <input type="text" class="l_Name" placeholder="Last Name" id="lname">
-                  <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
+              <div class="field ">
+                  <input name="l_Name" id="l_Name" value="" type="text" placeholder="Last Name">
+                  <span><img src="images/icon-error.svg" alt="" class="error-icon"></span>
                   <span class="error-text">Last name name cannot be empty</spa> 
               </div>
-              <div class="field">
-                  <input type="text" class="email" placeholder ="Email Address" id="em">
-                  <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
+              <div class="field ">
+                  <input name="Email"  id="Email" value="" type="email" placeholder ="Email Address">
+                  <span><img src="images/icon-error.svg" alt="" class="error-icon"></span>
                   <span class="error-text">Email cannot be empty</span> 
               </div>
-              <div class="field" id="in4">
-                  <input type="text" class="password" placeholder="Password" id="pass">
-                  <span><img src="images/icon-error.svg" alt="error" class="error-icon"></span>
-                  <span class="error-text">Password cannot be empty</spa>
-  
+              <div class="field " id="in4">
+                  <input name="password"  id="password" value="" type="password" placeholder="Password">
+                  <span><img src="images/icon-error.svg" alt="" class="error-icon"></span>
+                  <span class="error-text">Password cannot be empty</span>
               </div>
-              
-              <button class="btn btn-green" type="submit">Claim your free trial</button>
-              
+              <button type='submit'>Claim your free trial</button>
               <p class="message">
                   By clicking the button, you are agreeing to our <span>Terms and Services</span>
               </p>
           </form>
       </div>
     </section>
-
-    
   
   </div>
   
-</main>
-
-
-</body>
+</section>
 <footer>
     <p class="attribution">
       Challenge by Frontend Mentor 
       Coded by <a href="#">Gianella Cevallos</a>.
     </p>
   </footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
