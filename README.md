@@ -1,5 +1,6 @@
-# Frontend Mentor - Intro component with sign up form solution
-This is a solution to the Intro with sign up form challenge on Frontend Mentor.
+# Intro component with sign up form solution
+
+This is a solution to the Intro component with sign up form challenge on Frontend Mentor.
 
 ## Table of contents
 
@@ -28,31 +29,46 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot](/images/Screenshot%202023-04-19%20at%2010.12.37%20PM.png)
+
+<br>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+- Live Site URL: [Demo](https://creative-pasca-c172d1.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- Semantic HTML5 markup.
+- CSS custom properties.
 - Mobile-first workflow
 - And JavaScript for further functionality.
 
+ <br>
+
 ### What I learned
+
+This project let me review many CSS properties that I was not aware of, and also put emphasis in the importance of developing with a Mobile-first workflow.
+
+<br>
 
 ### Continued development
 
+It needs to have a function added to the email error. This function will limit the type of input for the email field (check regex).
+
+<br>
+
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) - Check the mozilla CSS guide.
+- [How to Fix the “Cannot read property ‘addEventListener’ of null” Error in JavaScript](https://codingbeautydev.com/blog/javascript-cannot-read-property-addeventlistener-of-null/) - This is an amazing article which helped me finally understand why I was getting this error, and find the proper solution. I'd recommend it to anyone still learning this concept.
 
 ## Author
+
+
+- Website - [Gianella Cevallos](https://gianellin.github.io/portfolio_website/)
+- Frontend Mentor - [@gianellin](https://www.frontendmentor.io/profile/gianellin)
+- Instagram - [@giacodesnow](https://www.instagram.com/giacodesnow/)
